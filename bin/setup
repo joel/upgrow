@@ -47,7 +47,7 @@ FileUtils.chdir APP_ROOT do
   end
 
   puts "== Copy app files =="
-  system!("rsync -aqzh ./test/fixtures/dummy_app/ ./test/dummy/")
+  system!("rsync -av ./test/fixtures/dummy_app/ ./test/dummy/")
 end
 
 FileUtils.chdir DUMMY_APP_ROOT do
