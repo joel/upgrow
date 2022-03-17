@@ -53,9 +53,6 @@ end
 FileUtils.chdir DUMMY_APP_ROOT do
   puts "DUMMY_APP_ROOT: [#{DUMMY_APP_ROOT}]"
 
-  puts "\n== Create database =="
-  system! "RAILS_ENV=test bundle exec rails db:create"
-
-  puts "\n== Migrate schema =="
-  system! "RAILS_ENV=test bundle exec rails db:migrate"
+  puts "\n== Setup database =="
+  system! "bundle exec rails db:prepare RAILS_ENv=test"
 end
