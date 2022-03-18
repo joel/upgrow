@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.test_files = Dir['test/**/*.rb']
   spec.require_paths = ['lib']
 
-  spec.add_dependency('activemodel', '~> 6.1')
+  spec.add_dependency('activemodel', '~> 7.0')
 end
